@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proyecto HTML - Registro</title>
+</head>
+
+<body>
+	<header>
+		<H1>
+			<svg width="146" height="91" viewBox="0 0 146 91">
+				<image xlink:href="images/handshake.svg" width="146" height="91"></image>
+			</svg>
+			TuServicio.com
+		</H1>
+		<h2>Te reparamos el computador</h2>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="contactenos.html">Contáctenos</a></li>
+				<li><a href="inicioDeSesion.html">Inicio de Sesión</a></li>
+				<li>Registro</li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<main>
+		<h2>Registro</h2>
+		<form autocomplete="on" name="registro">
+			<fieldset>
+				<legend>Nuevo usuario</legend>
+				<p>
+					<label for="email">Email*</label><br>
+					<input type="email" required placeholder="email@dominio.com" required>
+				</p>
+				<p>
+					<label for="contrasena">Contraseña*</label><br>
+					<input type="password" required>
+				</p>
+				<p>
+					<label for="dondenosvio">Dónde nos vió:</label><br>
+					<input type="radio" name="dondenosvio" value="Google">Google
+					<input type="radio" name="dondenosvio" value="Otro">Otro
+				</p>
+				<p>
+					<label for="comentario">Comentario*</label><br>
+					<textarea name="comentario" cols="30" rows="5" required></textarea>
+				</p>
+				<p>
+					<input type="checkbox" required><label for="terminos">Acepta terminos y condiciones*</label><br>
+				</p>
+				<input type="submit" name="Enviar">
+			</fieldset>
+		</form>
+	</main>
+	<hr>
+	<footer>
+		<p>
+			Derechos reservados
+		</p>
+	</footer>
+</body>
+
+</html>
